@@ -1,8 +1,10 @@
 <h1 align="center">Mexico cartel website</h1>
 
+[![Build Status](http://84.226.138.247:8080/job/PAG/badge/icon)](http://84.226.138.247:8080/job/PAG/)
+
 ## Description
 
-This is a website that shows the information on the most important cartels in Mexico.
+This is a website that shows information on the most important cartels in Mexico.
 
 ## Installation
 
