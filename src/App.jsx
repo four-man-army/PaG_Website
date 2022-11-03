@@ -1,11 +1,11 @@
-import './App.css'
+import { Container, Typography } from "@mui/material"
 
 function App() {
 
   return (
-    <div className="App">
-      <h1>Geringverdiener</h1>
-    </div>
+    <Container>
+      <Typography variant="h1">Brotverteiler</Typography>
+    </Container>
   )
 }
 
