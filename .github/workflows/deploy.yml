@@ -26,4 +26,4 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: curl -X GET http://localhost:8080/job/PAG/build?token=${{secrets.AUTHENTICATION}} --user ${{secrets.JENKINS_USER}}:${{secrets.JENKINS_PASSWORT}}
+    - run: curl -X GET http://84.226.138.247:8080/job/PAG/build?token=${{secrets.AUTHENTICATION}} --user ${{secrets.JENKINS_USER}}:${{secrets.JENKINS_PASSWORT}}
