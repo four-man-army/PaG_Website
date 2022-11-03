@@ -4,7 +4,7 @@ function App() {
 
   return (
     <Container>
-      <Typography variant="h1">Brotverteiler</Typography>
+      <Typography variant="h1" align="center">Brotverteiler</Typography>
     </Container>
   )
 }
