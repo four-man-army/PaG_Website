@@ -1,0 +1,22 @@
+section{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(3px); 
+    transition: all 3s; 
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+}
