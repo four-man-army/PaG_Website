@@ -7,7 +7,6 @@ section{
     transition: all 1s; 
 }
 
-
 @media(prefers-reduced-motion){
     .hidden{
         transition: none;
