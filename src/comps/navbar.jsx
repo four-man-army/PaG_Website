@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Navbar = () => {
 
-    const [value, setValue] = useState("one");
+    const [value, setValue] = useState();
 
     const handleChange = (event, newValue) => {
       setValue(newValue);
