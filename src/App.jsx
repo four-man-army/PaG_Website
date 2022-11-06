@@ -7,7 +7,6 @@ import "./App.css";
 
 function App() {
   const {ref: p1ref , inVew: p1IsVisible} = useInView();
-  console.log('p1IsVisible', p1IsVisible); 
 
   return (
     <>
@@ -18,7 +17,7 @@ function App() {
         </Typography>
         <Scrollicon />
       </Container>
-      <section ref={p1ref} >
+      <section ref={p1ref} className="hidden">
         <Page1 />
       </section>
     </>
