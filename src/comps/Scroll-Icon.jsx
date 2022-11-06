@@ -8,12 +8,12 @@ export default function Scrollicon() {
       className="floating"
       sx={{ position: "fixed", bottom: "35px", left: 0, right: 0 }}
     >
-      <Typography variant="h5" align="center">
+      <Typography variant="h5" align="center" color="rgb(21, 21, 21)">
         {" "}
         scroll{" "}
       </Typography>
       <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
-        <KeyboardDoubleArrowDownIcon />
+        <KeyboardDoubleArrowDownIcon/>
       </Box>
     </Box>
   );
