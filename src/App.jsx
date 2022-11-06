@@ -1,12 +1,10 @@
-import { Container, Typography } from "@mui/material";
-import { InView } from 'react-intersection-observer'; 
+import { Container, Box, Typography } from "@mui/material";
+import { InView } from "react-intersection-observer";
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
-import Page1 from "./pages/Page1";
 import "./App.css";
 
 function App() {
-
   return (
     <>
       <Navbar />
@@ -16,15 +14,29 @@ function App() {
         </Typography>
         <Scrollicon />
       </Container>
-      <InView as="section" onChange={(inView, entry) => {
-        if (inView) {
-          // Scroll to the Page1 component
-          entry.target.scrollTo(0, 0);
-          console.log("Page1");
-        }
-      }}>
-        <Page1 />
-      </InView>
+      <Container sx={{ height: "100vh", pt: 50 }}>
+        <Box margin="auto 20% auto 20%">
+          <InView
+            as="section"
+            onChange={(inView, entry) => {
+              if (inView) {
+                // Scroll to the Page1 component
+                entry.target.scrollTo(0, 0);
+                entry.target.classList.add("show");
+                console.log("Page1");
+              } else {
+                entry.target.classList.remove("show");
+              }
+            }}
+          >
+            <Typography variant="h3">Einführung</Typography>
+            <Typography variant="h5">
+              Der Drogenkrieg in Mexiko ist schon längst im Gange und hat
+              bereits tausende von Opfern gebracht...
+            </Typography>
+          </InView>
+        </Box>
+      </Container>
     </>
   );
 }

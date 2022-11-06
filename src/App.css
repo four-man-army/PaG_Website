@@ -1,13 +1,10 @@
 section{
     margin: 0;
     padding: 0;
-    height: 100vh;
-}
-
-.hidden{
+    height: 100%;
     opacity: 0;
-    filter: blur(3px); 
-    transition: all 3s; 
+    filter: blur(2px); 
+    transition: all 1s; 
 }
 
 @media(prefers-reduced-motion){
