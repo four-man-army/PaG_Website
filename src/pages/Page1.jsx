@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { Container } from '@mui/system';
 import "./Page1.css";

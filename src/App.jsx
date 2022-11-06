@@ -1,5 +1,5 @@
 import { Container, Typography } from "@mui/material";
-import { InView } from 'react-intersection-observer'; 
+import { InView } from "react-intersection-observer"; 
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
 import Page1 from "./pages/Page1";
