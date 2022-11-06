@@ -1,18 +1,21 @@
-import { Container, Typography } from "@mui/material"
-import Scrollicon from "./Scroll-Icon";
-import Navbar from "./navbar"
+import { Container, Typography } from "@mui/material";
+import Scrollicon from "./comps/Scroll-Icon";
+import Navbar from "./comps/navbar";
+import Page1 from "./pages/Page1";
+
 
 function App() {
 
   return (
     <>
       <Navbar />
-      <Container sx={{ height: "150%", pt: 50 }}>
+      <Container sx={{ height: "110%", pt: 50}}>
         <Typography variant="h1">
           Eine Reise durch den mexikanischen Drogenkrieg
         </Typography>
         <Scrollicon />
       </Container>
+      <Page1/>
     </>
   );
 }
