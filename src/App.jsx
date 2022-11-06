@@ -1,25 +1,42 @@
-import { Container, Typography } from "@mui/material";
-import { useInView } from 'react-intersection-observer'; 
+import { Container, Box, Typography } from "@mui/material";
+import { InView } from "react-intersection-observer";
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
-import Page1 from "./pages/Page1";
 import "./App.css";
 
 function App() {
-  const {ref: p1ref , inVew: p1IsVisible} = useInView();
-
   return (
     <>
       <Navbar />
-      <Container sx={{ height: "120%", pt: 50 }}>
-        <Typography variant="h1">
+      <Container sx={{ height: "110vh", pt: 50 }}>
+        <Typography variant="h1" color="whitesmoke">
           Eine Reise durch den mexikanischen Drogenkrieg
         </Typography>
         <Scrollicon />
       </Container>
-      <section ref={p1ref} className="hidden">
-        <Page1 />
-      </section>
+      <Container sx={{ height: "100vh", pt: 50 }}>
+        <Box margin="auto 20% auto 20%">
+          <InView
+            as="section"
+            onChange={(inView, entry) => {
+              if (inView) {
+                // Scroll to the Page1 component
+                entry.target.scrollTo(0, 0);
+                entry.target.classList.add("show");
+                console.log("Page1");
+              } else {
+                entry.target.classList.remove("show");
+              }
+            }}
+          >
+            <Typography variant="h3">Einführung</Typography>
+            <Typography variant="h5">
+              Der Drogenkrieg in Mexiko ist schon längst im Gange und hat
+              bereits tausende von Opfern gebracht...
+            </Typography>
+          </InView>
+        </Box>
+      </Container>
     </>
   );
 }
