@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Container sx={{ height: "110%", pt: 50}}>
+      <Container sx={{ height: "110vh", pt: 50}}>
         <Typography variant="h1">
           Eine Reise durch den mexikanischen Drogenkrieg
         </Typography>
