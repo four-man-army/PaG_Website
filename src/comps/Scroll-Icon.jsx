@@ -1,11 +1,9 @@
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import { Typography, Box } from "@mui/material";
-import { HideOn } from "react-hide-on-scroll";
 import "./Scroll-Icon.css";
 
 export default function Scrollicon() {
   return (
-    <HideOn atHeight height={100}>
       <Box
         className="floating"
         sx={{ position: "fixed", bottom: "35px", left: 0, right: 0 }}
@@ -18,6 +16,5 @@ export default function Scrollicon() {
           <KeyboardDoubleArrowDownIcon />
         </Box>
       </Box>
-    </HideOn>
   );
 }
