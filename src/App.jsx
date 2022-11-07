@@ -20,8 +20,6 @@ function App() {
             as="section"
             onChange={(inView, entry) => {
               if (inView) {
-                // Scroll to the Page1 component
-                entry.target.scrollTo(0, 0);
                 entry.target.classList.add("show");
                 console.log("shown");
               } else {
@@ -31,7 +29,7 @@ function App() {
             }}
           >
             <Typography variant="h3">Einführung</Typography>
-            <Typography variant="h5">
+            <Typography variant="h5" >
               Der Drogenkrieg in Mexiko ist schon längst im Gange und hat
               bereits tausende von Opfern gebracht...
             </Typography>
