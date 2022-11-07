@@ -23,9 +23,10 @@ function App() {
                 // Scroll to the Page1 component
                 entry.target.scrollTo(0, 0);
                 entry.target.classList.add("show");
-                console.log("Page1");
+                console.log("shown");
               } else {
                 entry.target.classList.remove("show");
+                console.log("hidden");
               }
             }}
           >
