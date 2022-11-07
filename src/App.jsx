@@ -3,12 +3,15 @@ import { InView } from 'react-intersection-observer';
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
 import Page1 from "./pages/Page1";
+import Video from "./comps/video";
 import "./App.css";
+
 
 function App() {
 
   return (
     <>
+    <Video />
       <Navbar />
       <Container sx={{ height: "110vh", pt: 50 }}>
         <Typography variant="h1">
