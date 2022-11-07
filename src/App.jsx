@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Container sx={{ height: "110vh", pt: 50}}>
+      <Container sx={{ height: "110vh", pt: 50 }}>
         <Typography variant="h1" color="whitesmoke">
           Eine Reise durch den mexikanischen Drogenkrieg
         </Typography>
