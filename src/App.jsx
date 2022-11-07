@@ -17,7 +17,7 @@ function App() {
       <Container sx={{ height: "100vh", pt: 50 }}>
         <Box margin="auto 20% auto 20%">
           <InView
-            as="section"
+            as="section" className="text-1-1"
             onChange={(inView, entry) => {
               if (inView) {
                 entry.target.classList.add("show");
@@ -28,7 +28,20 @@ function App() {
               }
             }}
           >
-            <Typography variant="h3">Einführung</Typography>
+          <Typography variant="h3">Einführung</Typography>
+          </InView>
+          <InView
+            as="section" className="text-1-2"
+            onChange={(inView, entry) => {
+              if (inView) {
+                entry.target.classList.add("show");
+                console.log("shown");
+              } else {
+                entry.target.classList.remove("show");
+                console.log("hidden");
+              }
+            }}
+          >
             <Typography variant="h5" >
               Der Drogenkrieg in Mexiko ist schon längst im Gange und hat
               bereits tausende von Opfern gebracht...
