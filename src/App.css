@@ -3,9 +3,20 @@ section{
     padding: 0;
     height: 100%;
     opacity: 0;
+}
+
+.text-1-1{
+    opacity: 0;
+    filter: blur(1px); 
+    transform: translateY(-5%);
+    transition: all 2.5s; 
+}
+
+.text-1-2{
+    opacity: 0;
     filter: blur(2px); 
-    transform: translateX(-30%);
-    transition: all 1s; 
+    transform: translateY(30%);
+    transition: all 3s; 
 }
 
 @media(prefers-reduced-motion){
