@@ -1,8 +1,7 @@
 {
   "name": "pag",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
-  "homepage": "https://yannick-diego-oliver.github.io/PaG_Website/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
