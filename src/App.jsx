@@ -6,15 +6,15 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="scroll-container">
       <Navbar />
-      <Container sx={{ height: "110vh", pt: 50 }}>
+      <Container sx={{ height: "110vh", pt: 50 }} className="scroll-area">
         <Typography variant="h1" color="whitesmoke">
           Eine Reise durch den mexikanischen Drogenkrieg
         </Typography>
         <Scrollicon />
       </Container>
-      <Container sx={{ height: "100vh", pt: 50 }}>
+      <Container sx={{ height: "100vh", pt: 50 }} className="scroll-area">
         <Box sx={{mx: "20%", my: "auto"}}>
           <InView
             as="section" className="text-1-1"
@@ -49,7 +49,7 @@ function App() {
           </InView>
         </Box>
       </Container>
-    </>
+    </div>
   );
 }
 

@@ -29,3 +29,13 @@ section{
     transform: translateX(0);
     transition: all 2.5s; 
 }
+
+.scroll-container{
+    overflow: auto;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-area{
+    scroll-snap-align: start;
+}
