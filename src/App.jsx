@@ -15,7 +15,7 @@ function App() {
         <Scrollicon />
       </Container>
       <Container sx={{ height: "100vh", pt: 50 }}>
-        <Box margin="auto 20% auto 20%">
+        <Box sx={{mx: "20%", my: "auto"}}>
           <InView
             as="section" className="text-1-1"
             onChange={(inView, entry) => {

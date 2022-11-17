@@ -9,14 +9,12 @@ section{
     opacity: 0;
     filter: blur(1px); 
     transform: translateY(-5%);
-    transition: all 2.5s; 
 }
 
 .text-1-2{
     opacity: 0;
     filter: blur(2px); 
     transform: translateY(30%);
-    transition: all 3s; 
 }
 
 @media(prefers-reduced-motion){
@@ -29,4 +27,5 @@ section{
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+    transition: all 2.5s; 
 }
