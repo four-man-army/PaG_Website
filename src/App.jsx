@@ -2,12 +2,20 @@ import { Container, Box, Typography } from "@mui/material";
 import { InView } from "react-intersection-observer";
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
+import Page1 from "./pages/Page1";
+import video from "./assets/video/mexico.webm";
 import "./App.css";
+
 
 function App() {
   return (
     <>
       <Navbar />
+      <div className="video-container">
+      <video autoPlay loop muted>
+        <source src={video} type="video/mp4" />
+      </video>
+      </div>
       <Container sx={{ height: "110vh", pt: 50 }}>
         <Typography variant="h1" color="whitesmoke">
           Eine Reise durch den mexikanischen Drogenkrieg
