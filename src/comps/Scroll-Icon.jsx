@@ -6,11 +6,26 @@ import "./Scroll-Icon.css";
 export default function Scrollicon(props) {
 
     return (
-            <Box className='floating' sx={{ position: "fixed", bottom: "35px", left: 0, right: 0, cursor: "pointer" }} onClick={props.onClick}>
-                <Typography variant="h5" align="center"> scroll </Typography>
-                <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
-                    <KeyboardDoubleArrowDownIcon />
-                </Box>
-            </Box>
-    )
+      <Box
+        className="floating"
+        sx={{
+          position: "fixed",
+          bottom: "35px",
+          left: 0,
+          right: 0,
+          cursor: "pointer",
+        }}
+      >
+        <Typography variant="h5" align="center">
+          {" "}
+          scroll{" "}
+        </Typography>
+        <Box
+          sx={{ width: "100%", display: "flex", justifyContent: "center" }}
+          onClick={props.onClick}
+        >
+          <KeyboardDoubleArrowDownIcon />
+        </Box>
+      </Box>
+    );
 }

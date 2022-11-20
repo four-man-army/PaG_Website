@@ -1,6 +1,7 @@
 import { Container, Box, Typography } from "@mui/material";
 import { InView } from "react-intersection-observer";
 import { useScrollTo } from "react-use-window-scroll";
+import { useEffect } from "react";
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
 import "./App.css";
@@ -11,6 +12,19 @@ function App() {
   const handelClick = () => {
     scrollTo({ top: window.innerHeight, behavior: "smooth" });
   }
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY <= 40) {
+        handelClick();
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
