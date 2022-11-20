@@ -9,14 +9,19 @@ import "./App.css";
 function App() {
   
   const scrollTo = useScrollTo();
+  var prevScrollY = window.scrollY;
   const handelClick = () => {
     scrollTo({ top: window.innerHeight, behavior: "smooth" });
   }
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY <= 40) {
-        handelClick();
+      console.log("scrolling down", window.scrollY > prevScrollY);
+      if (window.scrollY <= 40 && prevScrollY - window.scrollY < 0) {
+        scrollTo({ top: window.innerHeight, behavior: "smooth" });
+      } else if (window.scrollY < window.innerHeight - 40 && prevScrollY - window.scrollY > 0) {
+        scrollTo({ top: 0, behavior: "smooth" });
       }
+      prevScrollY = window.scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
