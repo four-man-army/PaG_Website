@@ -4,7 +4,9 @@ import { useScrollTo } from "react-use-window-scroll";
 import { useEffect } from "react";
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
+import video from "./assets/video/mexico.webm";
 import "./App.css";
+
 
 function App() {
   
@@ -34,8 +36,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <Container sx={{ height: "100vh", pt: 50 }}>
-        <Typography variant="h1" color="whitesmoke">
+      <div className="video-container">
+      <video autoPlay loop muted>
+        <source src={video} type="video/mp4" />
+      </video>
+      </div>
+      <Container sx={{ height: "110vh", pt: 50 }}>
+        <Typography variant="h1">
           Eine Reise durch den mexikanischen Drogenkrieg
         </Typography>
         <Scrollicon onClick={ handelClick } />

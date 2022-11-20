@@ -1,5 +1,5 @@
-import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
-import { Typography, Box } from '@mui/material';
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import { Typography, Box } from "@mui/material";
 import "./Scroll-Icon.css";
 
 
