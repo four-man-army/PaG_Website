@@ -3,10 +3,10 @@ import { Typography, Box } from '@mui/material';
 import "./Scroll-Icon.css";
 
 
-export default function Scrollicon() {
+export default function Scrollicon(props) {
 
     return (
-            <Box className='floating' sx={{ position: "fixed", bottom: "35px", left: 0, right: 0 }}>
+            <Box className='floating' sx={{ position: "fixed", bottom: "35px", left: 0, right: 0, cursor: "pointer" }} onClick={props.onClick}>
                 <Typography variant="h5" align="center"> scroll </Typography>
                 <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
                     <KeyboardDoubleArrowDownIcon />
