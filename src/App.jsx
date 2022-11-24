@@ -10,6 +10,34 @@ import "./App.css";
 
 function App() {
 
+    const scrollTo = useScrollTo();
+    const einführung = useRef(null);
+    let prevScrollpos = 0;
+    const handelClick = () => {
+      scrollTo({ top: window.innerHeight, behavior: "smooth" });
+      console.log(window.scrollY);
+    };
+    useEffect(() => {
+      const handleScroll = () => {
+        if (
+          window.scrollY < window.innerHeight &&
+          window.scrollY > prevScrollpos
+        ) {
+          handelClick();
+        }
+        prevScrollpos = window.scrollY;
+      };
+
+      window.addEventListener(
+        "scroll",
+        _.debounce(handleScroll, 100, { leading: true, trailing: false })
+      );
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+
   return (
     <>
       <Navbar />
