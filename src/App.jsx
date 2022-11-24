@@ -22,7 +22,7 @@ function App() {
         <Typography variant="h1">
           Eine Reise durch den mexikanischen Drogenkrieg
         </Typography>
-        <Scrollicon onClick={ handelClick } />
+        <Scrollicon  />
       </Container>
       <Container sx={{ height: "100vh", pt: 50 }}>
         <Box sx={{ mx: "20%", my: "auto" }}>
