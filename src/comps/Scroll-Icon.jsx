@@ -22,7 +22,6 @@ export default function Scrollicon(props) {
         </Typography>
         <Box
           sx={{ width: "100%", display: "flex", justifyContent: "center" }}
-          onClick={props.onClick}
         >
           <KeyboardDoubleArrowDownIcon />
         </Box>
