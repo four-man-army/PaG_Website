@@ -1,13 +1,20 @@
 section{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
+    opacity: 0;
 }
 
-.hidden{
+.text-1-1{
     opacity: 0;
-    filter: blur(3px); 
-    transition: all 3s; 
+    filter: blur(1px); 
+    transform: translateY(-5%);
+}
+
+.text-1-2{
+    opacity: 0;
+    filter: blur(1px); 
+    transform: translateY(30%);
 }
 
 @media(prefers-reduced-motion){
@@ -19,6 +26,18 @@ section{
 .show{
     opacity: 1;
     filter: blur(0);
+    transform: translateX(0);
+    transition: all 2.5s; 
+}
+
+.scroll-container{
+    overflow: auto;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-area{
+    scroll-snap-align: start;
 }
 
 video {

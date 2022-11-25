@@ -1,8 +1,9 @@
-import { Container, Typography } from "@mui/material";
-import { InView } from 'react-intersection-observer'; 
+import { Container, Box, Typography } from "@mui/material";
+import { InView } from "react-intersection-observer";
+import { useScrollTo } from "react-use-window-scroll";
+import { useEffect, useRef } from "react";
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
-import Page1 from "./pages/Page1";
 import video from "./assets/video/Mexico-drugwar.mp4";
 import "./App.css";
 
@@ -21,20 +22,45 @@ function App() {
         <Typography variant="h1">
           Eine Reise durch den mexikanischen Drogenkrieg
         </Typography>
-        <Scrollicon />
+        <Scrollicon  />
       </Container>
-      <InView
-        as="section"
-        onChange={(inView, entry) => {
-          if (inView) {
-            // Scroll to the Page1 component
-            entry.target.scrollTo(0, 0);
-            console.log("Page1");
-          }
-        }}
-      >
-        <Page1 />
-      </InView>
+      <Container sx={{ height: "100vh", pt: 50 }}>
+        <Box sx={{ mx: "20%", my: "auto" }}>
+          <InView
+            as="section"
+            className="text-1-1"
+            onChange={(inView, entry) => {
+              if (inView) {
+                entry.target.classList.add("show");
+                console.log("shown");
+              } else {
+                entry.target.classList.remove("show");
+                console.log("hidden");
+              }
+            }}
+          >
+            <Typography variant="h3">Einführung</Typography>
+          </InView>
+          <InView
+            as="section"
+            className="text-1-2"
+            onChange={(inView, entry) => {
+              if (inView) {
+                entry.target.classList.add("show");
+                console.log("shown");
+              } else {
+                entry.target.classList.remove("show");
+                console.log("hidden");
+              }
+            }}
+          >
+            <Typography variant="h5">
+              Der Drogenkrieg in Mexiko ist schon längst im Gange und hat
+              bereits tausende von Opfern gebracht...
+            </Typography>
+          </InView>
+        </Box>
+      </Container>
     </>
   );
 }
