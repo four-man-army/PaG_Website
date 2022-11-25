@@ -1,7 +1,7 @@
 import { Container, Box, Typography } from "@mui/material";
 import { InView } from "react-intersection-observer";
 import { useScrollTo } from "react-use-window-scroll";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
 import video from "./assets/video/mexico.webm";
@@ -9,29 +9,6 @@ import "./App.css";
 
 
 function App() {
-  
-  const scrollTo = useScrollTo();
-  var prevScrollY = window.scrollY;
-  const handelClick = () => {
-    scrollTo({ top: window.innerHeight, behavior: "smooth" });
-  }
-  useEffect(() => {
-    const handleScroll = () => {
-      console.log("scrolling down", window.scrollY > prevScrollY);
-      if (window.scrollY <= 40 && prevScrollY - window.scrollY < 0) {
-        scrollTo({ top: window.innerHeight, behavior: "smooth" });
-      } else if (window.scrollY < window.innerHeight - 40 && prevScrollY - window.scrollY > 0) {
-        scrollTo({ top: 0, behavior: "smooth" });
-      }
-      prevScrollY = window.scrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <>
@@ -45,7 +22,7 @@ function App() {
         <Typography variant="h1">
           Eine Reise durch den mexikanischen Drogenkrieg
         </Typography>
-        <Scrollicon onClick={ handelClick } />
+        <Scrollicon  />
       </Container>
       <Container sx={{ height: "100vh", pt: 50 }}>
         <Box sx={{ mx: "20%", my: "auto" }}>
