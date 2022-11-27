@@ -4,7 +4,7 @@ import { useScrollTo } from "react-use-window-scroll";
 import { useEffect, useRef } from "react";
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
-import video from "./assets/video/mexico.webm";
+import video from "./assets/video/Mexico-drugwar.mp4";
 import "./App.css";
 
 
