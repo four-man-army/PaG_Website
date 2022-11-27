@@ -1,17 +1,17 @@
 import { Container, Box, Typography } from "@mui/material";
 import { InView } from "react-intersection-observer";
-import { useScrollTo } from "react-use-window-scroll";
-import { useEffect, useRef } from "react";
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
 import video from "./assets/video/mexico.webm";
 import "./App.css";
+import Theme from "./comps/theme";
 
 
 function App() {
 
   return (
     <>
+      <Theme />
       <Navbar />
       <div className="video-container">
       <video autoPlay loop muted>
