@@ -1,4 +1,4 @@
-import { createTheme, CssBaseline, ThemeProvider } from '@mui/material'
+import { createTheme, CssBaseline, ThemeProvider, useMediaQuery } from '@mui/material'
 import { red } from "@mui/material/colors";
 import React from 'react'
 import ReactDOM from 'react-dom/client'
@@ -8,7 +8,9 @@ import "./index.css"
 
 
 function ToggleTheme() {
-  const [mode, setMode] = React.useState("light");
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+
+  const [mode, setMode] = React.useState(prefersDarkMode ? 'dark' : 'light');
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {
