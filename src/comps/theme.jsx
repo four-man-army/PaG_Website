@@ -10,8 +10,8 @@ const Theme = () => {
   const theme = useTheme();
   const colorMode = useContext(ColorModeContext);
   return (
-    <Box sx={{ position: "fixed", top: 10, left: 10 }}>
-      <IconButton onClick={colorMode.toggleColorMode} color="inherit" sx={theme.palette.mode === "light" && {backgroundColor: "white", borderRadius: "100%"}}>
+    <Box sx={{ position: "fixed", top: 10, left: 10, backgroundColor: theme.palette.background.default, borderRadius: "100%" }}>
+      <IconButton onClick={colorMode.toggleColorMode} color="inherit">
         {theme.palette.mode === "dark" ? <Brightness7  /> : <Brightness4 />}
       </IconButton>
     </Box>
