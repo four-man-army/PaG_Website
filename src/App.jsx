@@ -18,7 +18,7 @@ function App() {
         <source src={video} type="video/mp4" />
       </video>
       </div>
-      <Container sx={{ height: "110vh", pt: 50 }}>
+      <Container sx={{ height: "110vh", pt: "20%" }}>
         <Typography variant="h1">
           Eine Reise durch den mexikanischen Drogenkrieg
         </Typography>
