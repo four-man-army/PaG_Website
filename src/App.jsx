@@ -2,7 +2,7 @@ import { Container, Box, Typography } from "@mui/material";
 import { InView } from "react-intersection-observer";
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
-import video from "./assets/video/mexico.webm";
+import video from "./assets/video/Mexico-drugwar.mp4";
 import "./App.css";
 import Theme from "./comps/theme";
 
