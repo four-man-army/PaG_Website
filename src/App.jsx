@@ -5,6 +5,7 @@ import Navbar from "./comps/navbar";
 import video from "./assets/video/Mexico-drugwar.mp4";
 import "./App.css";
 import Theme from "./comps/theme";
+import Tank from "./comps/interactivtank";
 
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
           </InView>
         </Box>
       </Container>
+      <Tank/>
     </>
   );
 }
