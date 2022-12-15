@@ -6,7 +6,6 @@ import App from './App'
 import { ColorModeContext } from './comps/theme'
 import "./index.css"
 
-
 function ToggleTheme() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
@@ -37,7 +36,8 @@ function ToggleTheme() {
         typography: {
           h1: {
             color: red[900],
-            weight: "bold",
+            fontWeight: 700,
+            fontSize: "7rem",
           },
         },
       },
