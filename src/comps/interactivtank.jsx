@@ -34,18 +34,27 @@ const Tank = () => {
                     <img className="layers" src={Wheelplate} width="100%" height="100%" />
                     <img className="layers" src={Freont} width="100%" height="100%" />
                     <img className="layers" src={Window} width="100%" height="100%" />
-                    <img className="layers" src={Shootingslid} width="100%" height="100%"/>
+                    <img className="layers" src={Shootingslid} width="100%" height="100%" />
                 </div>
 
+                {
+                    // Button
+                }
 
             </div>
             <Container sx={{ display: "flex", gap: 3, justifyContent: "space-between" }}>
-                <Button className="tankbutton" id="tured" variant="contained" >Turet</Button>
+                <Button className="tankbutton" id="tured" variant="contained">Turet</Button>
                 <Button className="tankbutton" id="armour" variant="contained">Armoure</Button>
                 <Button className="tankbutton" id="bumper" variant="contained">Contained</Button>
                 <Button className="tankbutton" id="gunslot" variant="contained">Contained</Button>
                 <Button className="tankbutton" id="window" variant="contained">Contained</Button>
             </Container>
+
+            {
+                // Text
+            }
+
+        
         </>
     );
 }
