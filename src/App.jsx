@@ -15,15 +15,15 @@ function App() {
       <Theme />
       <Navbar />
       <div className="video-container">
-      <video autoPlay loop muted>
-        <source src={video} type="video/mp4" />
-      </video>
+        <video autoPlay loop muted>
+          <source src={video} type="video/mp4" />
+        </video>
       </div>
       <Container sx={{ height: "110vh", pt: 50 }}>
         <Typography variant="h1">
           Eine Reise durch den mexikanischen Drogenkrieg
         </Typography>
-        <Scrollicon  />
+        <Scrollicon />
       </Container>
       <Container sx={{ height: "100vh", pt: 50 }}>
         <Box sx={{ mx: "20%", my: "auto" }}>
@@ -60,9 +60,11 @@ function App() {
               bereits tausende von Opfern gebracht...
             </Typography>
           </InView>
+
         </Box>
+        <Tank />
       </Container>
-      <Tank/>
+
     </>
   );
 }
