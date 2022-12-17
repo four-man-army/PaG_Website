@@ -6,6 +6,8 @@ import video from "./assets/video/Mexico-drugwar.mp4";
 import "./App.css";
 import Theme from "./comps/theme";
 import Tank from "./comps/interactivtank";
+import Tanktext from "./comps/tanktext";
+
 
 
 function App() {
@@ -59,9 +61,12 @@ function App() {
               Der Drogenkrieg in Mexiko ist schon längst im Gange und hat
               bereits tausende von Opfern gebracht...
             </Typography>
-          </InView>
 
-        </Box>
+           
+          </InView>
+         
+        </Box>  
+        <Tanktext/>
         <Tank />
       </Container>
 
