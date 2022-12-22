@@ -17,7 +17,13 @@
     position: absolute;
     opacity: 0;
 }
-
+.layers1{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
 .layershover{
     top: 0;
     bottom: 0;
@@ -25,4 +31,8 @@
     right: 0;
     position: absolute;
     opacity: 1;
+}
+
+.leed{
+    padding-top: 100px;
 }

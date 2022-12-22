@@ -62,12 +62,13 @@ function App() {
               bereits tausende von Opfern gebracht...
             </Typography>
 
-           
+           <Tanktext/>
+           <Tank />
           </InView>
          
         </Box>  
-        <Tanktext/>
-        <Tank />
+        
+        
       </Container>
 
     </>
