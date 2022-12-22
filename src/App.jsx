@@ -19,9 +19,12 @@ function App() {
       </video>
       </div>
       <Container sx={{ height: "110vh", pt: "20%" }}>
-        <Typography variant="h1">
-          Eine Reise durch den mexikanischen Drogenkrieg
-        </Typography>
+        <div id="titleContainer">
+        <h1 id="title">
+          Eine Reise durch den <br/> 
+          mexikanischen Drogenkrieg
+        </h1>
+        </div>
         <Scrollicon  />
       </Container>
       <Container sx={{ height: "100vh", pt: 50 }}>
