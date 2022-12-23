@@ -13,6 +13,7 @@ import Front from '../assets/img/Tank/front.png';
 import Window from '../assets/img/Tank/window.png';
 import Shootingslid from '../assets/img/Tank/shootingslid.png';
 
+const images = [ {image: Turretlayer, name: "Turret"}, {image: Wheelplate, name: "Armor"}, {image: Front, name: "Bumper"}, {image: Window, name: "Window"}, {image: Shootingslid, name: "Gunslot"}];
 
 
 
@@ -23,14 +24,6 @@ const Item = styled(Paper)(({ theme }) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
 }));
-
-
-
-function cahngeOpacity1() {
-    turret.target.style.opacity='1';
-  }
-
-
   
   
 const Tank = () => {
@@ -40,11 +33,11 @@ const Tank = () => {
             <div className="background">
                 <img src={Tankback} width="100%" height="100%" />
                 <div>
-                    <img  className="layers" src={Turretlayer} width="100%" height="100%" />
-                    <img  className="layers" src={Wheelplate} width="100%" height="100%" />
-                    <img  className="layers" src={Front} width="100%" height="100%" />
-                    <img  className="layers" src={Window} width="100%" height="100%" />
-                    <img  className="layers" src={Shootingslid} width="100%" height="100%" />
+                    {
+                        images.map((image, index) => (
+                            <img  className="layers" src={image.image} width="100%" height="100%" />
+                        ))
+                    }
                 </div>
 
                 {
@@ -53,11 +46,9 @@ const Tank = () => {
 
             </div>
             <Container sx={{ display: "flex", gap: 3, justifyContent: "space-between" }}>
-                <Button className="tankbutton" id="turd" variant="contained">Turret</Button>
-                <Button className="tankbutton" id="armour" variant="contained">Armor</Button>
-                <Button className="tankbutton" id="bumper" variant="contained">Contained</Button>
-                <Button className="tankbutton" id="gunslot" variant="contained">Contained</Button>
-                <Button className="tankbutton" id="window" variant="contained">Contained</Button>
+                {
+                    images.map((image, i) => <Button className="tankbutton" key={i} variant="contained">{image.name}</Button>)
+                }
                 
             </Container>
 
