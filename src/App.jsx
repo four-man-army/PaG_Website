@@ -63,12 +63,12 @@ function App() {
             </Typography>
 
            <Tanktext/>
-           <Tank />
+          <Tank/>
           </InView>
          
         </Box>  
         
-        
+         
       </Container>
 
     </>

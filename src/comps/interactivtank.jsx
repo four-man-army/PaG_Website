@@ -6,8 +6,8 @@ import "./interactivtank.css";
 import { Container } from "@mui/system";
 
 //--------IMG-----------
-import Tankback from '../assets/img/Tank/tank2.png';
-import Turretlayer from '../assets/img/Tank/tabbnk.png';
+import Tankback from '../assets/img/Tank/tank.png';
+import Turretlayer from '../assets/img/Tank/turred.png';
 import Wheelplate from '../assets/img/Tank/wheel.png';
 import Front from '../assets/img/Tank/front.png';
 import Window from '../assets/img/Tank/window.png';
@@ -26,9 +26,11 @@ const Item = styled(Paper)(({ theme }) => ({
 
 
 
+
 function cahngeOpacity1() {
     turret.target.style.opacity='1';
   }
+
 
 
   
@@ -63,6 +65,9 @@ const Tank = () => {
 
             {
                 // Text
+                <p></p>
+            
+
             }
 
         
