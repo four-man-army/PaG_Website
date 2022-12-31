@@ -5,9 +5,8 @@ import Navbar from "./comps/navbar";
 import video from "./assets/video/Mexico-drugwar.mp4";
 import "./App.css";
 import Theme from "./comps/theme";
-import Tank from "./comps/interactivtank";
-import Tanktext from "./comps/tanktext";
-import MediaCard from "./comps/narcosub";
+import RecipeReviewCard from "./comps/narcosub/speedboat";
+import SemiSub from "./comps/narcosub/semisub";
 
 
 
@@ -63,9 +62,10 @@ function App() {
               bereits tausende von Opfern gebracht...
             </Typography>
 
-           <Tanktext/>
-          <Tank/>
-          <MediaCard/>
+        
+       
+          <RecipeReviewCard/>
+          <SemiSub/>
           </InView>
          
         </Box>  
