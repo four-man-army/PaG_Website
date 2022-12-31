@@ -7,6 +7,7 @@ import "./App.css";
 import Theme from "./comps/theme";
 import Tank from "./comps/interactivtank";
 import Tanktext from "./comps/tanktext";
+import MediaCard from "./comps/narcosub";
 
 
 
@@ -64,6 +65,7 @@ function App() {
 
            <Tanktext/>
           <Tank/>
+          <MediaCard/>
           </InView>
          
         </Box>  
