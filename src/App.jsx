@@ -7,6 +7,7 @@ import "./App.css";
 import Theme from "./comps/theme";
 import RecipeReviewCard from "./comps/narcosub/speedboat";
 import SemiSub from "./comps/narcosub/semisub";
+import NarcoSubs from "./comps/subinteraktiv";
 
 
 
@@ -66,8 +67,9 @@ function App() {
        
           <RecipeReviewCard/>
           <SemiSub/>
+          
           </InView>
-         
+         <NarcoSubs/>
         </Box>  
         
          
