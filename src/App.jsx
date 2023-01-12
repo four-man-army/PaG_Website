@@ -8,6 +8,8 @@ import Theme from "./comps/theme";
 import RecipeReviewCard from "./comps/narcosub/speedboat";
 import SemiSub from "./comps/narcosub/semisub";
 import NarcoSubs from "./comps/subinteraktiv";
+import Tanktext from "./comps/tanktext";
+import Tank from "./comps/interactivtank";
 
 
 
@@ -63,16 +65,25 @@ function App() {
               bereits tausende von Opfern gebracht...
             </Typography>
 
-        
-       
-          <RecipeReviewCard/>
-          <SemiSub/>
-          
+
           </InView>
-         <NarcoSubs/>
-        </Box>  
-        
-         
+          <Tanktext />
+        </Box>
+        <Box sx={{ mx: "15%", my: "auto", pb: 10 }}>
+          <Tank />
+        </Box>
+        <Box sx={{ mx: "20%", my: "auto" }}>
+
+
+
+          <RecipeReviewCard />
+          <SemiSub />
+        </Box>
+        <Box sx={{ mx: "15%", my: "auto", pb: 10 }}>
+          <NarcoSubs />
+        </Box>
+
+
       </Container>
 
     </>
