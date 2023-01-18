@@ -1,4 +1,4 @@
-import { Box, Paper, Tab, Tabs, Slide, useScrollTrigger } from "@mui/material";
+import { Box, Paper, Tab, Tabs } from "@mui/material";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -9,10 +9,7 @@ const Navbar = () => {
       setValue(newValue);
     };
 
-    const trigger = useScrollTrigger();
-
     return (
-      <Slide appear={false} direction="down" in={!trigger}>
         <Box
           sx={{
             borderColor: "divider",
@@ -30,7 +27,6 @@ const Navbar = () => {
             </Tabs>
           </Paper>
         </Box>
-      </Slide>
     );
 }
  
