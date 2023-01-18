@@ -10,6 +10,7 @@ import SemiSub from "./comps/narcosub/semisub";
 import NarcoSubs from "./comps/subinteraktiv";
 import Tanktext from "./comps/tanktext";
 import Tank from "./comps/interactivtank";
+import Cartell from "./comps/cartell";
 
 
 
@@ -67,6 +68,7 @@ function App() {
 
 
           </InView>
+          <Cartell />
           <Tanktext />
         </Box>
         <Box sx={{ mx: "15%", my: "auto", pb: 10 }}>
