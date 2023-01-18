@@ -5,6 +5,7 @@ import "./interactivtank.css";
 const Tanktext = () => {
     return (
         <div className="leed">
+            <Typography variant="h2">Monstruo 2010</Typography>
             <Typography variant="h5" paragraph>
             Die mexikanischen Drogenkartelle haben in den letzten Jahren immer wieder aufgefallen, weil sie sogenannte "Panzer" einsetzen, um ihre illegalen Aktivitäten zu schützen. Diese Panzer sind in der Regel gewöhnliche Fahrzeuge, die mit Stahlplatten und anderen Materialien gepanzert wurden, um sie gegen Schüsse und Explosionen zu schützen.
             </Typography>
