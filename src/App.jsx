@@ -11,6 +11,7 @@ import NarcoSubs from "./comps/subinteraktiv";
 import Tanktext from "./comps/tanktext";
 import Tank from "./comps/interactivtank";
 import Cartell from "./comps/cartell";
+import Staat from "./comps/staat";
 
 
 
@@ -87,7 +88,9 @@ function App() {
         <Box sx={{ mx: "15%", my: "auto", pb: 10 }}>
           <NarcoSubs />
         </Box>
-
+        <Box sx={{ mx: "20%", my: "auto" }}>
+          <Staat />
+        </Box>
 
       </Container>
 
