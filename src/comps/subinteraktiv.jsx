@@ -13,10 +13,10 @@ import Fule from "../assets/img/Sub/fule.png";
 import Cargo from "../assets/img/Sub/Cargo.png";
 
 const images = [
-  { image: Engin, name: "Engine", ref: null },
+  { image: Engin, name: "Motor", ref: null },
   { image: Crew, name: "Crew", ref: null },
-  { image: Cargo, name: "Cargo", ref: null },
-  { image: Fule, name: "Fuel", ref: null },
+  { image: Cargo, name: "Fracht", ref: null },
+  { image: Fule, name: "Treibschtoff", ref: null },
 ];
 
 const Item = styled(Paper)(({ theme }) => ({

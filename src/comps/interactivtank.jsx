@@ -10,15 +10,13 @@ import Tankback from "../assets/img/Tank/tank.png";
 import Turretlayer from "../assets/img/Tank/taddnk.png";
 import Wheelplate from "../assets/img/Tank/wheel.png";
 import Front from "../assets/img/Tank/front.png";
-import Window from "../assets/img/Tank/window.png";
 import Shootingslid from "../assets/img/Tank/shootingslid.png";
 
 const images = [
-  { image: Turretlayer, name: "Turret", ref: null },
-  { image: Wheelplate, name: "Armor", ref: null },
+  { image: Turretlayer, name: "Turm", ref: null },
+  { image: Wheelplate, name: "Panzerung", ref: null },
   { image: Front, name: "Bumper", ref: null },
-  { image: Window, name: "Window", ref: null },
-  { image: Shootingslid, name: "Gunslot", ref: null },
+  { image: Shootingslid, name: "Schiessscharte", ref: null },
 ];
 
 const Item = styled(Paper)(({ theme }) => ({
