@@ -18,7 +18,7 @@ const Tanktext = () => {
             Es gibt auch Berichte darüber, dass die Kartelle in der Lage sind, sogenannte "Narco-Tanks" zu bauen, indem sie gewöhnliche Lastwagen mit Stahlplatten und anderen Materialien panzieren. Diese Fahrzeuge sind in der Lage, sogar durch Straßensperren und Blockaden zu brechen und können für die Sicherheitskräfte und die Zivilbevölkerung sehr gefährlich sein.
             </Typography>
             <Typography variant="h5" paragraph>
-            Es ist wichtig zu betonen, dass diese Panzer und Narco-Tanks die Resultate eines illegalen Handelns darstellen und ihre Existenz nur die Probleme in diesem Land weiter verschärfen. Es gibt keinen rechtlichen Grund für diese Art von Waffen und die Verwendung von ihnen stellt eine Gefahr für die Öffentlichkeit dar.
+            Es ist wichtig zu betonen, dass diese Panzer und Narco-Tanks die Resultate eines illegalen Handelns darstellen und ihre Existenz nur die Probleme in diesem Land weiter verschärfen. Es gibt keinen rechtlichen Grund für diese Art von Waffen und die Verwendung von ihnen stellt eine Gefahr für die Öffentlichkeit dar. Teoretisch aber eigentlich sind Panzer schon cool!
             </Typography>
         </div>
 
