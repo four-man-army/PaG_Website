@@ -12,6 +12,7 @@ import Tanktext from "./comps/tanktext";
 import Tank from "./comps/interactivtank";
 import Cartell from "./comps/cartell";
 import Staat from "./comps/staat";
+import Auswirkungen from "./comps/auswirkungen";
 
 
 
@@ -26,7 +27,7 @@ function App() {
           <source src={video} type="video/mp4" />
         </video>
       </div>
-      <Container sx={{ height: "110vh", pt: "20%" }}>
+      <Container sx={{ pt: "20%" }}>
         <div id="titleContainer">
         <h1 id="title">
           Eine Reise durch den <br/> 
@@ -35,7 +36,7 @@ function App() {
         </div>
         <Scrollicon  />
       </Container>
-      <Container sx={{ height: "100vh", pt: 50 }}>
+      <Container sx={{ height: "100vh", pt: "1500px", pb: "100px" }}>
         <Box sx={{ mx: "20%", my: "auto" }}>
           <InView
             as="section"
@@ -90,6 +91,7 @@ function App() {
         </Box>
         <Box sx={{ mx: "20%", my: "auto" }}>
           <Staat />
+          <Auswirkungen />
         </Box>
 
       </Container>
