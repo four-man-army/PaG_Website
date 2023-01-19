@@ -1,30 +1,42 @@
 import { Container, Box, Typography } from "@mui/material";
 import { InView } from "react-intersection-observer";
-import { useScrollTo } from "react-use-window-scroll";
-import { useEffect, useRef } from "react";
 import Scrollicon from "./comps/Scroll-Icon";
 import Navbar from "./comps/navbar";
 import video from "./assets/video/Mexico-drugwar.mp4";
 import "./App.css";
+import Theme from "./comps/theme";
+import RecipeReviewCard from "./comps/narcosub/speedboat";
+import SemiSub from "./comps/narcosub/semisub";
+import NarcoSubs from "./comps/subinteraktiv";
+import Tanktext from "./comps/tanktext";
+import Tank from "./comps/interactivtank";
+import Cartell from "./comps/cartell";
+import Staat from "./comps/staat";
+import Auswirkungen from "./comps/auswirkungen";
+
 
 
 function App() {
 
   return (
     <>
+      <Theme />
       <Navbar />
       <div className="video-container">
-      <video autoPlay loop muted>
-        <source src={video} type="video/mp4" />
-      </video>
+        <video autoPlay loop muted>
+          <source src={video} type="video/mp4" />
+        </video>
       </div>
-      <Container sx={{ height: "110vh", pt: 50 }}>
-        <Typography variant="h1">
-          Eine Reise durch den mexikanischen Drogenkrieg
-        </Typography>
+      <Container sx={{ pt: "20%" }}>
+        <div id="titleContainer">
+        <h1 id="title">
+          Eine Reise durch den <br/> 
+          mexikanischen Drogenkrieg
+        </h1>
+        </div>
         <Scrollicon  />
       </Container>
-      <Container sx={{ height: "100vh", pt: 50 }}>
+      <Container sx={{ height: "100vh", pt: "1500px", pb: "100px" }}>
         <Box sx={{ mx: "20%", my: "auto" }}>
           <InView
             as="section"
@@ -58,9 +70,32 @@ function App() {
               Der Drogenkrieg in Mexiko ist schon längst im Gange und hat
               bereits tausende von Opfern gebracht...
             </Typography>
+
+
           </InView>
+          <Cartell />
+          <Tanktext />
         </Box>
+        <Box sx={{ mx: "15%", my: "auto", pb: 10 }}>
+          <Tank />
+        </Box>
+        <Box sx={{ mx: "20%", my: "auto" }}>
+
+
+
+          <RecipeReviewCard />
+          <SemiSub />
+        </Box>
+        <Box sx={{ mx: "15%", my: "auto", pb: 10 }}>
+          <NarcoSubs />
+        </Box>
+        <Box sx={{ mx: "20%", my: "auto" }}>
+          <Staat />
+          <Auswirkungen />
+        </Box>
+
       </Container>
+
     </>
   );
 }
